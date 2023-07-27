@@ -7,8 +7,8 @@ const enum Button {
     plus = "plus",
     minus = "minus"
 }
-let counterPlus: number = 0;
-let counterMinus: number = 0;
+let counterPlus = 0;
+let counterMinus = 0;
 
 app.use(express.static('static'))
 app.use(express.json())
