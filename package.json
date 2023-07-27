@@ -2,14 +2,22 @@
   "name": "level_3.1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "hackathon.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf ./dist && tsc",
+    "start": "node dist/hackathon.js",
+    "dev": "npx nodemon"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^20.4.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17"
   }
 }
